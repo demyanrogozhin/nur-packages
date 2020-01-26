@@ -1,6 +1,1 @@
-{
-  # Add your overlays here
-  #
-  # my-overlay = import ./my-overlay;
-}
-
+{ particl-overlay = import ./particl-overlay.nix; }
