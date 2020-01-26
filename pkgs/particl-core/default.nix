@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
   buildInputs = with pkgs;
     [ boost170 miniupnpc_2 libevent zlib unixtools.hexdump python3 ]
     ++ lib.optionals (!withoutWallet) [ db48 ]
-    ++ lib.optionals withGui [ qtbase qttools qrencode protobuf hidapi ]
+    ++ lib.optionals withGui [ qtbase qttools qrencode protobuf hidapi libusb ]
     ++ lib.optionals withZMQ [ zeromq ];
 
   configureFlags = [
