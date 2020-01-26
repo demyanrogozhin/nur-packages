@@ -14,5 +14,7 @@
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  particl-core = pkgs.callPackage ./pkgs/particl-core { };
+  particl-daemon = pkgs.callPackage ./pkgs/particl-core { };
+  particl-qt =
+    pkgs.libsForQt5.callPackage ./pkgs/particl-core { withGui = true; };
 }

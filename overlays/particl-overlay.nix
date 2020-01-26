@@ -1,1 +1,1 @@
-self: super: { particl-core = super.callPackage ../pkgs/particl-core { }; }
+self: super: { particl-daemon = super.callPackage ../pkgs/particl-core { }; }

@@ -24,8 +24,8 @@ in {
     enable = mkEnableOption "Particl Node service";
     package = mkOption {
       type = types.package;
-      default = pkgs.particl-core;
-      defaultText = "pkgs.particl-core";
+      default = pkgs.particl-daemon;
+      defaultText = "pkgs.particl-daemon";
       description = "The Particl package to use";
     };
     configFile = mkOption {
