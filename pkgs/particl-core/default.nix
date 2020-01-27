@@ -4,7 +4,7 @@
 stdenv.mkDerivation rec {
   pname = if withGui then "particl-qt" else "particl-daemon";
 
-  version = "0.19-git-6805257";
+  version = "0.19.99.1.0-g6805257";
 
   src = fetchFromGitHub {
     owner = "particl";
